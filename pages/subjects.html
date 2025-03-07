@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION PAGE</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            color: #333;
+        }
+
+        /* Centering container */
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Main heading */
+        h1 {
+            text-align: center;
+            color: #FF6347;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #FF6347;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        table caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        input[type="text"], input[type="number"], input[type="date"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Submit and Reset buttons */
+        input[type="submit"], input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+
+        /* Checkbox styling */
+        .checkbox-group input {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            td {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><u><b>SUBJECT REGISTRATION</b></u></h1>
+        <h2><i><u><b>SUBJECT REGISTRATION FORM</b></u></i></h2>
+
+        <form action="#" method="post">
+            <!-- Personal Data Table -->
+            <table>
+                <caption>PERSONAL DATA</caption>
+                <tr>
+                    <td>STUDENT REG No.</td>
+                    <td><input type="number" name="RegNo" required></td>
+                </tr>
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td><input type="text" name="fname" required></td>
+                </tr>
+                <tr>
+                    <td>SECOND NAME</td>
+                    <td><input type="text" name="sname" required></td>
+                </tr>
+                <tr>
+                    <td>LAST NAME</td>
+                    <td><input type="text" name="lname" required></td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>
+                        <select name="Gender" required>
+                            <option>--Select--</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td>Region of Origin</td>
+                    <td>
+                        <select name="Region" required>
+                            <option>--Select--</option>
+                            <option>LITORAL</option>
+                            <option>NORTH WEST</option>
+                            <option>SOUTH WEST</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Specialty</td>
+                    <td>
+                        <select name="specialty" required>
+                            <option>--Select--</option>
+                            <option>TIMS</option>
+                            <option>ACCOUNTING(CG)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>
+                        <select name="class" required>
+                            <option>--Select--</option>
+                            <option>Form Four</option>
+                            <option>Form Five</option>
+                            <option>Lower Sixth</option>
+                            <option>Upper Sixth</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Subjects Table -->
+            <table>
+                <caption>SUBJECTS</caption>
+                <tr>
+                    <td><input type="checkbox" name="PPT"> PRINCIPLE & PRACTICE OF TAXATION</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="IMSB">  MANAGEMENT INFORMATION SYSTEMS</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="FA"> FINANCIAL ACCOUNTING</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="CA"> ECONOMICS</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="CM"> ENTREPRENEURSHIP</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="BM"> BUSINESS MATHS</td>
+                </tr>
+            </table>
+
+            <!-- Submit and Reset Buttons -->
+            <div style="text-align: center;">
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

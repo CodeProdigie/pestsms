@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SECONDARY TECHNICAL EDUCATION PROJECT</title>
+	<link rel="stylesheet" href="../css/registration.css">
+	<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body>
+	<form action="./config/registration.php">
+		  <div class="top">
+			 <h2>ADMISSION FORM</h2>
+		  </div>
+		  <div class="container">
+              <div class="content1">
+				<div class="contents">
+					<label for="">Surname</label>
+					<input required type="text" placeholder="enter your surname">
+				  </div>
+				  <div class="contents">
+					<label for="">Given Names</label>
+					<input required type="text" placeholder="enter your given names">
+				  </div>
+				  <div class="contents">
+					<label for="">Gender</label>
+					<div class="gender">
+						<div class="gen">
+							<input required type="radio" name="gender" value="M">
+							<label for="">Male</label>
+						</div>
+						<div class="gen">
+							<input required type="radio" name="gender" value="F">
+							<label for="">Female</label>
+						</div>
+					</div>
+				  </div>
+				  <div class="contents">
+					<label for="">Date of Birth</label>
+					<input required type="date">
+				  </div>
+				  <div class="contents">
+					<label for="">Nationality</label>
+					<select required name="nationality"> 
+						<option>---Select---</option>
+						<option value="cameroonian" >Cameroonian</option>
+						<option value="nigerian">Nigerian</option>
+						<option value="Gabonese">Gabonese</option>
+			
+					</select required>
+				  </div>
+				  <div class="contents">
+					<label for="">Region of Origin</label>
+					<select required name="region">
+						<option>---Select---</option>
+						<option value="douala" >DOUALA</option>
+						<option value="bamenda">BAMENDA</option>
+						<option value="buea">BUEA</option>
+			
+					</select required>
+				  </div>
+			  </div>
+			  <div class="content2">
+				<div class="contents">
+					<label for="">Speciality</label>
+					<select required name="speciality">
+						<option>---Select---</option>
+						<option value="TIMS">TAXATION AND MANAGEMENT INFORMATION  SYSTEMS</option>
+						<option value="DPR">DIGITAL PROFESSIONAL REPORTING</option>
+						<option value="Fishing">FISHING</option>
+						<option value="ME">MARINE ELECTROMECHANICS</option>
+						<option value="MEM">MARINE ENGINE MECHANIC</option>
+					</select required>
+				  </div>
+				  <div class="contents">
+					<label for="">Class for Admission</label>
+					<select required name="class">
+						<option>---Select---</option>		
+						<option value="Form 5" >FORM 5</option>
+						<option value="Lower Sixth">LOWER SIXTH</option>
+						<option value="Upper Sixth">UPPER SIXTH</option>
+			
+					</select required>
+				  </div>
+				  <div class="contents">
+					<label for="">Guardian/Parent's Name</label>
+					<input required type="text" placeholder="enter Guardian/Parent's Name">
+				  </div>
+				  <div class="contents">
+					<label for="">Telephone</label>
+					<input required type="tel" placeholder="e.g 674365423 ">
+				  </div>
+				  <div class="contents">
+					<label for="">Email</label>
+					<input required type="email" placeholder="eg school@gmail.com">
+				  </div>
+				  <div class="contents">
+					<label for="">Address</label>
+					<input required type="text" placeholder="enter your address">
+				  </div>
+			  </div>
+		  </div> 
+		  <div class="button">
+			<button type="submit">Register Now</button>
+		  </div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(130deg,white,rgb(255, 255, 255));
+}
+
+form{
+    background:#ffffff;
+    max-width: 60rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    box-shadow: 2px 2px 20px rgb(207, 207, 207);
+}
+
+form .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form .top{
+    padding: 2rem 0;
+}
+
+form .top h2{
+    text-align: center;
+    font-weight: 600;
+    color: #ec4528;
+}
+
+form .contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    max-width: 50rem;
+    width: 100%;
+}
+
+form .contents input{
+    max-width: 40rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 7px;
+}
+
+form .contents .gender{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+form .contents .gender .gen{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form .contents select{
+    max-width: 40rem;
+    width: 100%;
+    padding: 10px 2rem;
+    box-shadow: 1px 1px 10px grey;
+}
+
+
+
+form button{
+    max-width: 42rem;
+    width: 100%;
+    padding: 0.8rem 3rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #ec4528;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form .button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
